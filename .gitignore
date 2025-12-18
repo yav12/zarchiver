@@ -1,2 +1,3 @@
 #stuff that shouldnt be tracked i guess
-build
+build/
+.cache
