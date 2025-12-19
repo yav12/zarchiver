@@ -1,6 +1,8 @@
-# zarchiver
+# zot
 
 a thingy to retrive stuff from zenless zone zero
+
+it most definitely does not stand for zenless optimizer thingy... whatever would give you that idea...
 
 ## making this work
 
