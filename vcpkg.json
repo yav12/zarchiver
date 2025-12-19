@@ -1,4 +1,6 @@
 {
+  "name": "zarchiver",
+  "version": "0.1.0",
   "dependencies": [
     "pcapplusplus"
   ]

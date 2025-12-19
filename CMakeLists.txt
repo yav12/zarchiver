@@ -1,9 +1,4 @@
 cmake_minimum_required(VERSION 3.15)
-
-project(zarchiver)
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
 # do the submodule stuff
 find_package(Git QUIET)
 if(GIT_FOUND AND EXISTS "${CMAKE_SOURCE_DIR}/.git")
@@ -24,11 +19,10 @@ if(NOT VCPKG_BOOTSTRAP_RESULT EQUAL "0")
     message(FATAL_ERROR "Vcpkg bootstrap failed with ${VCPKG_BOOTSTRAP_RESULT}")
 endif()
 
-#set the toolchain file for vcpkg
-if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
-    set(CMAKE_TOOLCHAIN_FILE "${CMAKE_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake"
-        CACHE STRING "")
-endif()
+
+project(zarchiver)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(PcapPlusPlus REQUIRED)
 
