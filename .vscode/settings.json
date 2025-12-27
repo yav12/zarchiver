@@ -1,0 +1,5 @@
+{
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/build/vcpkg_installed/x64-linux/include"
+    ]
+}
